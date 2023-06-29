@@ -1,0 +1,145 @@
+$mainColor: #89ddf4; // Define a SCSS variable
+
+@font-face {
+    font-family: OhWhale;
+    src: url(/src/fonts/OhWhale-oYZq.ttf);
+  }
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    margin-top: 50px;
+    margin-bottom: 0;
+    font-family: OhWhale;
+    font-size: 80px;
+    color: rgb(87, 196, 221);
+    text-shadow:3px 3px rgb(40, 126, 151);
+}
+
+h1 > span {
+    display: inline-block;
+    animation-name: wave;
+    animation-timing-function: linear;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+
+}
+
+h1 span:nth-child(1) {
+    text-shadow: 0px 0px;
+    animation: none;
+}
+
+h1 span:nth-child(2) {
+    animation-delay: 0s;
+}
+h1 span:nth-child(3) {
+    animation-delay: 0.2s;
+}
+h1 span:nth-child(4) {
+    animation-delay: 0.3s;
+}
+h1 span:nth-child(5) {
+    animation-delay: 0.4s;
+}
+h1 span:nth-child(6) {
+    animation-delay: 0.5s;
+}
+h1 span:nth-child(7) {
+    animation-delay: 0.6s;
+}
+h1 span:nth-child(8) {
+    animation-delay: 0.7s;
+}
+h1 span:nth-child(9) {
+    animation-delay: 0.8s;
+}
+h1 span:nth-child(10) {
+    animation-delay: 0.9s;
+}
+h1 span:nth-child(11) {
+    animation-delay: 1s;
+}
+
+
+@keyframes wave {
+    00% {
+      transform: translateY(0em);
+    }
+    60% {
+      transform: translateY(-0.4em);
+    }
+    100% {
+      transform: translateY(0em);
+    }
+  }
+
+
+body {
+    background-image: url(/src/images/bg.jpeg);   
+    background-size: cover;  
+    overflow: hidden;
+}
+
+.bubbles {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -90;
+}
+
+.bubbles > img {
+    animation-name: bubble;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    width: 90px;
+}
+
+@keyframes bubble {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-60vh);
+        opacity: 0;
+    }
+}
+
+.bubbles img:nth-child(1) {
+    animation-delay: 1.8s;
+}
+.bubbles img:nth-child(2) {
+    animation-delay: 2.5s;
+}
+.bubbles img:nth-child(3) {
+    animation-delay: 1s;
+}
+.bubbles img:nth-child(4) {
+    animation-delay: 2.8s;
+}
+.bubbles img:nth-child(5) {
+    animation-delay: 0.8s;
+}
+.bubbles img:nth-child(6) {
+    animation-delay: 1.8s;
+}
+.bubbles img:nth-child(7) {
+    animation-delay: 2.8s;
+}
+.bubbles img:nth-child(8) {
+    animation-delay: 1.6s;
+}

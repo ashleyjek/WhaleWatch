@@ -1,6 +1,7 @@
-import Example from "./scripts/example"
+import Chart from "./scripts/chart";
 
 document.addEventListener("DOMContentLoaded", () => {
-    const main = document.getElementById('main')
-    new Example(main)
+    // btn.addEventListener("click", () => {
+    //     console.log("I'm clicked");
+    // })
 })

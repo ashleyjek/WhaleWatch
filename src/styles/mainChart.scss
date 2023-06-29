@@ -1,0 +1,72 @@
+$mainColor: #89ddf4;
+
+
+@font-face {
+    font-family: Breaking;
+    src: url(/src/fonts/Breaking.ttf);
+}
+
+#main-nav {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    align-items: center;
+    position: relative;
+}
+
+.navigation {
+    display: flex;
+    width: 1200px;
+    height: 50px;
+}
+
+.nav-bar {
+    display: flex;
+    width: 1200px;
+    justify-content: space-evenly;
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav-bar li {
+    display: inline;
+    list-style-type: none;
+    font-family: Breaking;
+    font-size: 25px;
+    color: rgb(83, 125, 159);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    
+}
+
+.nav-bar li:hover {
+    text-shadow:1px 1px white;
+    background-color: rgb(173, 216, 230, .2);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#main-bg {
+    display: flex;
+    position: relative;
+    align-self: center;
+    border-radius: 35px;
+    background-color: rgb(173, 216, 230, 0.2);
+    width: 1300px;
+    height: 700px;
+    z-index: 0;
+    justify-content: space-between;
+}
+
+.data-sections {
+    width: 800px;
+    height: 500px;
+    background-color: black;
+    margin: 25px;
+}
+
+
+
+
+
