@@ -1,11 +1,6 @@
 /*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
   \*************************************************************************************************************************************/
-<<<<<<< HEAD
-#main > h1 {
-  border: 4px solid purple;
-  padding: 20px;
-=======
 @font-face {
   font-family: Breaking;
   src: url(/src/fonts/Breaking.ttf);
@@ -311,5 +306,4 @@ body {
 
 .bubbles img:nth-child(8) {
   animation-delay: 1.6s;
->>>>>>> sub
 }
