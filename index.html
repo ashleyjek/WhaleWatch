@@ -1,16 +1,108 @@
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" /> 
     <link rel="stylesheet" href="./dist/main.css" />
     <script src="./dist/main.js"></script>
-    <title>Project Name</title>
+    <title>Whale Watch!</title>
   </head>
-
   <body>
-    <div id="main"></div>
+    <div class="header">
+      <h1>
+        <span>🐳</span>
+        <span>W</span>
+        <span>h</span>
+        <span>a</span>
+        <span>l</span>
+        <span>e</span>
+        <span> </span>
+        <span>W</span>
+        <span>a</span>
+        <span>t</span>
+        <span>c</span>
+        <span>h</span>
+      </h1>
+    </div>
+    <div class="bubble-container">
+      <div class="bubbles">
+        <img src="src/images/bubble.png">
+        <img src="src/images/bubble.png">
+        <img src="src/images/bubble.png">
+        <img src="src/images/bubble.png">
+        <img src="src/images/bubble.png">
+        <img src="src/images/bubble.png">
+        <img src="src/images/bubble.png">
+        <img src="src/images/bubble.png">
+      </div>
+    </div>
+    <div id="main-nav">
+      <div class="navigation">
+        <ul class="nav-bar">
+            <li>Blue Whale</li>
+            <li>Sperm Whale</li>
+            <li>Humpback Whale</li>
+            <li>Killer Whale</li>
+            <li>Beluga Whale</li>
+            <li>Bowhead Whale</li>
+        </ul>
+      </div>
+
+
+      <div class="main-bg">      
+        <div class="data-sections-left">
+          <div class="size-comp">size-comp
+            <span id="size-comp"></span>
+          </div>
+          <div class="population-graph">population graph
+              <svg id="myChart"></svg>
+
+          </div>
+
+        </div>  
+
+        <div class="data-sections-right">
+          <div class="basic-facts">
+              <div class="labels">About Me!</div>
+                  <div class="fact-list">
+                      <div class="species">Species : 
+                        <span id="species-name"></span>
+                      </div>
+                          <br>
+                      <div class="weight">Weight :
+                        <span id="weight"></span>
+                      </div>
+                          <br>
+                      <div class="length">Length : 
+                        <span id="length"></span>
+                      </div>
+                          <br>
+                      <div class="life-span">Life Span :
+                        <span id="life-span"></span>
+                      </div>
+                        <br>
+                      <div class="threats">Threats : 
+                        <span id="threats"></span>
+                      </div>
+                        <br>
+                      <div class="region">Region : 
+                        <span id="region"></span>
+                      </div>
+                        <br>
+                    </div>
+            </div>
+        <div class="range-map">Range!
+          <span id="range-map">
+            <img id="map" />
+          </span>
+        </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  
   </body>
 
 </html>
