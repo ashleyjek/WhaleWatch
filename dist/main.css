@@ -256,12 +256,6 @@ h1 span:nth-child(11) {
     transform: translateY(0em);
   }
 }
-body {
-  background-image: url("../assets/images/bg.jpeg");
-  background-size: cover;
-  overflow: hidden;
-}
-
 .bubbles {
   display: flex;
   width: 100%;
@@ -343,4 +337,9 @@ body {
 @font-face {
   font-family: "Cream";
   src: url(../assets/fonts/Cream.ttf);
+}
+body {
+  background-image: url("../assets/images/bg.jpeg");
+  background-size: cover;
+  overflow: hidden;
 }
