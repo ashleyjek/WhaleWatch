@@ -1,32 +1,32 @@
 const POPULATION = {
-    "Blue Whale": [
-        {
-        "date": "2000",
-        "population": "40000"
-    }, {
-        "date": "2001",
-        "population": "50000"
-    }
-],
+    "Blue Whale": {
+        population: [340280, 4727],
+        years: [1890, 2001]
+    },
 
-    "Sperm Whale": {
-
+    "Fin Whale": {
+        population: [762400, 109600],
+        years: [1890, 2001]
     },
 
     "Humpback Whale": {
-
+        population: [231700, 42070],
+        years: [1890, 2001]
     },
 
-    "Killer Whale": {
-
+    "Gray Whale": {
+        population: [24600, 15936],
+        years: [1890, 2001]
     },
 
-    "Beluga Whale": {
-
+    "Minke Whale": {
+        population: [637000, 506900],
+        years: [1890, 2001]
     },
 
     "Bowhead Whale": {
-
+        population: [89000, 9450],
+        years: [1890, 2001]
     }
 }
 
