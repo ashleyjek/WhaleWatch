@@ -2,8 +2,8 @@
 @import "./styles/background.scss";
 
 @font-face {
-    font-family: "OhWhale";
-    src: url("../assets/fonts/OhWhale-oYZq.ttf");
+    font-family: OhWhale;
+    src: url(../assets/fonts/OhWhale-oYZq.ttf);
 }
 
 @font-face {
@@ -22,7 +22,7 @@
 }
 
 body {
-    background-image: url(../assets/images/bg.jpeg);   
+    background-image: url("../assets/images/bg.jpeg");   
     background-size: cover;  
     overflow: hidden;
 }

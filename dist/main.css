@@ -216,6 +216,12 @@
   justify-content: center;
 }
 
+body {
+  background-image: url("../assets/images/bg.jpeg");
+  background-size: cover;
+  overflow: hidden;
+}
+
 .tutorial {
   position: absolute;
   top: 6%;
@@ -245,7 +251,7 @@
 h1 {
   margin-top: 25px;
   margin-bottom: 0;
-  font-family: "OhWhale";
+  font-family: OhWhale;
   font-size: 80px;
   color: rgb(87, 196, 221);
   text-shadow: 3px 3px rgb(40, 126, 151);
@@ -383,8 +389,8 @@ h1 span:nth-child(11) {
 }
 
 @font-face {
-  font-family: "OhWhale";
-  src: url("../assets/fonts/OhWhale-oYZq.ttf");
+  font-family: OhWhale;
+  src: url(../assets/fonts/OhWhale-oYZq.ttf);
 }
 @font-face {
   font-family: "Breaking";
@@ -399,7 +405,7 @@ h1 span:nth-child(11) {
   src: url(../assets/fonts/Cream.ttf);
 }
 body {
-  background-image: url("/assets/images/bg.jpeg");
+  background-image: url("../assets/images/bg.jpeg");
   background-size: cover;
   overflow: hidden;
 }
