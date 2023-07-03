@@ -222,6 +222,10 @@
   left: 28%;
 }
 
+.tutorial-button {
+  cursor: pointer;
+}
+
 .links {
   position: absolute;
   top: 6%;
