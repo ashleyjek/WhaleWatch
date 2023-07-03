@@ -9,14 +9,14 @@ const WHALEDATA = {
         map: 'src/images/blue-whale-map.png'
     },
 
-    "Sperm Whale": {
-        species: "Sperm Whale or cachalot (Physeter macrocephalus)",
-        weight: "15 tons (females) to 45 tons (males)",
-        length: "40 feet (females) to 52 feet (males)",
-        lifespan: "Up to 60 years",
-        threats: "Climate change, Entanglement in fishing gear, Marine debris, Ocean noise, Oil spills and contaminants, Vessel strikes",
+    "Fin Whale": {
+        species: "Fin Whale (Balaenoptera physalus)",
+        weight: "40 to 80 tons",
+        length: "75 to 85 feet",
+        lifespan: "80 to 90 years",
+        threats: "Climate change, Entanglement in fishing gear, Lack of prey due to overfishing, Ocean noise, Vessel strikes",
         region: "Alaska, New England/Mid-Atlantic, Pacific Islands, Southeast, West Coast",
-        map: 'src/images/sperm-whale-map.png'
+        map: 'src/images/fin-whale-map.png'
     },
 
     "Humpback Whale": {
@@ -29,24 +29,24 @@ const WHALEDATA = {
         map: 'src/images/humpback-map.png'
     },
 
-    "Killer Whale": {
-        species: "Orca (Orcinus orca), also known as 'Killer Whale'",
-        weight: "Up to 11 tons",
-        length: "Up to 32 feet",
-        lifespan: "30 to 90 years",
-        threats: "Chemical contaminants, Disturbance from vessel traffic and noise, Entanglement in fishing gear, Food limitations, Oil spills",
-        region: "Alaska, New England/Mid-Atlantic, Pacific Islands, Southeast, West Coast",
-        map: 'src/images/orca-map.png'
+    "Gray Whale": {
+        species: "Gray Whale (Eschrichtius robustus)",
+        weight: "About 90,000 pounds",
+        length: "42 to 49 feet",
+        lifespan: "50 to 60 years",
+        threats: "Climate change, Disturbance from whale watching activities, Entanglement in fishing gear, Habitat impacts, Ocean noise, Vessel strikes",
+        region: "Alaska, West Coast",
+        map: 'src/images/gray-whale-map.png'
     },
 
-    "Beluga Whale": {
+    "Minke Whale": {
         species: "Beluga Whale (Delphinapterus leucas)",
-        weight: "Average 3,150 pounds",
-        length: "Up to 16 feet",
-        lifespan: "Up to 90 years",
-        threats: "Climate change, Contaminants, Habitat impacts, Ocean noise, Predation, Prey limitations, Strandings",
-        region: "Alaska",
-        map: 'src/images/beluga-map.png' 
+        weight: "Up to about 20,000 pounds",
+        length: "Up to about 35 feet",
+        lifespan: "Up to 50 years",
+        threats: "Entanglement in fishing gear, Climate change, Ocean noise, Vessel strikes, Whaling",
+        region: "Alaska, New England/Mid-Atlantic, Pacific Islands, Southeast, West Coast",
+        map: 'src/images/minke-map.png' 
     },
 
     "Bowhead Whale": {

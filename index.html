@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./dist/main.css" />
     <script src="./dist/main.js"></script>
     <title>Whale Watch!</title>
+    <link rel="shortcut icon" href="src/images/favicon.png" />
   </head>
   <body>
     <div class="header">
@@ -40,22 +41,32 @@
       <div class="navigation">
         <ul class="nav-bar">
             <li>Blue Whale</li>
-            <li>Sperm Whale</li>
-            <li>Humpback Whale</li>
-            <li>Killer Whale</li>
-            <li>Beluga Whale</li>
             <li>Bowhead Whale</li>
+            <li>Humpback Whale</li>
+            <li>Gray Whale</li>
+            <li>Minke Whale</li>
+            <li>Fin Whale</li>
+          </li>
         </ul>
+        <img id="audio-button" src="src/images/audio-on.png" />
       </div>
 
 
       <div class="main-bg">      
         <div class="data-sections-left">
-          <div class="size-comp">Size
-            <span id="size-comp"></span>
+          
+          <div class="size-comp">
+            <!-- <img id="diver" src="src/images/diver.png"/> -->
+            <img id="size-comp" />
           </div>
-          <div class="population-graph">Population
-              <svg id="myChart"></svg>
+          
+          <div class="population-graph">
+            <div class="pop-label">
+              Population
+            </div>
+            <div class="graph-size">
+              <canvas id="popGraph" width="600" height="180"></canvas>
+            </div>
 
           </div>
 
@@ -93,7 +104,7 @@
             </div>
         <div class="range-map">Range!
           <span id="range-map">
-            <img id="map" />
+            <img id="map-png" />
           </span>
         </div>
         </div>
@@ -101,8 +112,6 @@
       </div>
     </div>
 
-
-  
   </body>
 
 </html>
