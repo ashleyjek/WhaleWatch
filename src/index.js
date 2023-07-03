@@ -5,6 +5,16 @@ import SPRITES from './data/sprites';
 
 
 document.addEventListener("DOMContentLoaded", () => {
+    const modal = document.querySelector(".modal");
+    const tutButton = document.querySelector(".tutorial-button");
+    const exit = document.querySelector(".x")
+    tutButton.onclick = function() {
+        modal.style.display = "flex";
+      }
+    exit.onclick = function() {
+        modal.style.display = "none";
+    }
+
     let activeTab;
     const tab = document.querySelector(".nav-bar");
     tab.addEventListener("click", species => {

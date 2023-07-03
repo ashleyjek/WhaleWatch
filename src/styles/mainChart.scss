@@ -23,6 +23,54 @@ $mainColor: #89ddf4;
     margin: 0px;
 }
 
+.buttons {
+    display: flex;
+    // position: absolute;
+    justify-content:center;
+    cursor: pointer;
+}
+
+.page-container {
+    display: flex;
+    justify-content: center;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    z-index: 1;
+    padding: 100px; /* Location of the box */
+    margin-top: 210px;
+    width: 1100px;
+    height: 498px;
+    border-radius: 35px;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+
+  }
+
+.tutorial button {
+    font-family: Cream;
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    margin-left: 20px;
+    height: 40px;
+    border-color: $mainColor;
+
+}
+
+.links button {
+    font-family: Cream;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    height: 40px;
+    font-size: 15px;
+    border-color: $mainColor;
+
+}
+
 .nav-bar li {
     display: inline;
     list-style-type: none;
@@ -32,6 +80,7 @@ $mainColor: #89ddf4;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 10px;
+    cursor: pointer;
     
 }
 
@@ -126,17 +175,17 @@ $mainColor: #89ddf4;
     background-color: rgba(255, 255, 255, 0.4);
 }
 
-::-webkit-scrollbar {
-    /* background-color: #f5f5f5; */
-    border-radius: 10px;
-    width: 5px;
-    height: 2px;
-}
-::-webkit-scrollbar-thumb {
-    background-color: rgb(36, 108, 144);
-    opacity: 0.5;
-    border-radius: 10px;
-}
+// ::-webkit-scrollbar {
+//     /* background-color: #f5f5f5; */
+//     border-radius: 10px;
+//     width: 5px;
+//     height: 2px;
+// }
+// ::-webkit-scrollbar-thumb {
+//     background-color: rgb(36, 108, 144);
+//     opacity: 0.5;
+//     border-radius: 10px;
+// }
 
 .fact-list {
     font-family: MorningBread;
@@ -173,6 +222,7 @@ $mainColor: #89ddf4;
     font-family: Cream;
     font-size: 25px;
     text-align: center;
+    cursor: pointer;
 }
 
 .range-map img {
@@ -193,6 +243,7 @@ $mainColor: #89ddf4;
 #audio-button {
     width: 35px;
     height: 35px;
+    cursor: pointer;
 }
 
 
