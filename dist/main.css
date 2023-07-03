@@ -1,18 +1,6 @@
 /*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
   \*************************************************************************************************************************************/
-@font-face {
-  font-family: Breaking;
-  src: url(/src/fonts/Breaking.ttf);
-}
-@font-face {
-  font-family: MorningBread;
-  src: url(/src/fonts/MorningBread-8Ml7A.ttf);
-}
-@font-face {
-  font-family: Cream;
-  src: url(/src/fonts/Cream.ttf);
-}
 #main-nav {
   display: flex;
   flex-direction: column;
@@ -115,9 +103,10 @@
   border-radius: 20px;
   margin-top: 10px;
   margin-left: 15px;
-  padding-left: 10px;
-  padding-right: 10px;
-  overflow: scroll;
+  padding-top: 20px;
+  padding-left: 25px;
+  padding-right: 15px;
+  overflow-y: scroll;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.4);
 }
@@ -172,6 +161,12 @@
   width: -webkit-fill-available;
 }
 
+#map-text {
+  position: absolute;
+  text-align: center;
+  width: inherit;
+}
+
 #region-text {
   display: block;
   text-align: center;
@@ -182,19 +177,15 @@
   height: 35px;
 }
 
-@font-face {
-  font-family: OhWhale;
-  src: url(/src/fonts/OhWhale-oYZq.ttf);
-}
 .header {
   display: flex;
   justify-content: center;
 }
 
 h1 {
-  margin-top: 50px;
+  margin-top: 25px;
   margin-bottom: 0;
-  font-family: OhWhale;
+  font-family: "OhWhale";
   font-size: 80px;
   color: rgb(87, 196, 221);
   text-shadow: 3px 3px rgb(40, 126, 151);
@@ -266,7 +257,7 @@ h1 span:nth-child(11) {
   }
 }
 body {
-  background-image: url("/src/images/bg.jpeg");
+  background-image: url("/assets/images/bg.jpeg");
   background-size: cover;
   overflow: hidden;
 }
@@ -335,4 +326,21 @@ body {
 
 .bubbles img:nth-child(8) {
   animation-delay: 1.6s;
+}
+
+@font-face {
+  font-family: "OhWhale";
+  src: url("../assets/fonts/OhWhale-oYZq.ttf");
+}
+@font-face {
+  font-family: "Breaking";
+  src: url(../assets/fonts/Breaking.ttf);
+}
+@font-face {
+  font-family: "MorningBread";
+  src: url(../assets/fonts/MorningBread-8Ml7A.ttf);
+}
+@font-face {
+  font-family: "Cream";
+  src: url(../assets/fonts/Cream.ttf);
 }

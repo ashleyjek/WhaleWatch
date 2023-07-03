@@ -1,2 +1,22 @@
 @import "./styles/mainChart.scss";
-@import "./styles/background.scss"
+@import "./styles/background.scss";
+
+@font-face {
+    font-family: "OhWhale";
+    src: url("../assets/fonts/OhWhale-oYZq.ttf");
+}
+
+@font-face {
+    font-family: "Breaking";
+    src: url(../assets/fonts/Breaking.ttf);
+}
+
+@font-face {
+    font-family: "MorningBread";
+    src: url(../assets/fonts/MorningBread-8Ml7A.ttf);
+}
+
+@font-face {
+    font-family: "Cream";
+    src: url(../assets/fonts/Cream.ttf);
+}

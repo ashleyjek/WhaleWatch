@@ -6,7 +6,7 @@ const WHALEDATA = {
         lifespan: "Estimated at around 80 to 90 years",
         threats: "Entanglement in fishing gear, Ocean noise, Vessel strikes",
         region: "Alaska, New England/Mid-Atlantic, Pacific Islands, Southeast, West Coast",
-        map: 'src/images/blue-whale-map.png'
+        map: 'assets/images/blue-whale-map.png'
     },
 
     "Fin Whale": {
@@ -16,7 +16,7 @@ const WHALEDATA = {
         lifespan: "80 to 90 years",
         threats: "Climate change, Entanglement in fishing gear, Lack of prey due to overfishing, Ocean noise, Vessel strikes",
         region: "Alaska, New England/Mid-Atlantic, Pacific Islands, Southeast, West Coast",
-        map: 'src/images/fin-whale-map.png'
+        map: 'assets/images/fin-whale-map.png'
     },
 
     "Humpback Whale": {
@@ -26,7 +26,7 @@ const WHALEDATA = {
         lifespan: "About 80 to 90 years",
         threats: "Entanglement in fishing gear, Vessel strikes, Vessel-based harassment, Ocean noise",
         region: "Alaska, New England/Mid-Atlantic, Pacific Islands, Southeast, West Coast",
-        map: 'src/images/humpback-map.png'
+        map: 'assets/images/humpback-map.png'
     },
 
     "Gray Whale": {
@@ -36,7 +36,7 @@ const WHALEDATA = {
         lifespan: "50 to 60 years",
         threats: "Climate change, Disturbance from whale watching activities, Entanglement in fishing gear, Habitat impacts, Ocean noise, Vessel strikes",
         region: "Alaska, West Coast",
-        map: 'src/images/gray-whale-map.png'
+        map: 'assets/images/gray-whale-map.png'
     },
 
     "Minke Whale": {
@@ -46,7 +46,7 @@ const WHALEDATA = {
         lifespan: "Up to 50 years",
         threats: "Entanglement in fishing gear, Climate change, Ocean noise, Vessel strikes, Whaling",
         region: "Alaska, New England/Mid-Atlantic, Pacific Islands, Southeast, West Coast",
-        map: 'src/images/minke-map.png' 
+        map: 'assets/images/minke-map.png' 
     },
 
     "Bowhead Whale": {
@@ -56,7 +56,7 @@ const WHALEDATA = {
         lifespan: "Unknown but evidence suggests they can live over 200 years",
         threats: "Climate change, Contaminants, Entanglement in fishing gear, Ocean noise, Offshore oil and gas development, Predation, Vessel strikes",
         region: "Alaska",
-        map: 'src/images/bowhead-map.png'
+        map: 'assets/images/bowhead-map.png'
     }
 
 }

@@ -1,19 +1,5 @@
 $mainColor: #89ddf4;
 
-@font-face {
-    font-family: Breaking;
-    src: url(/src/fonts/Breaking.ttf);
-}
-
-@font-face {
-    font-family: MorningBread;
-    src: url(/src/fonts/MorningBread-8Ml7A.ttf);
-}
-
-@font-face {
-    font-family: Cream;
-    src: url(/src/fonts/Cream.ttf);
-}
 
 #main-nav {
     display: flex;
@@ -132,9 +118,10 @@ $mainColor: #89ddf4;
     border-radius: 20px;
     margin-top: 10px;
     margin-left: 15px;
-    padding-left: 10px;
-    padding-right: 10px;
-    overflow: scroll;
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 15px;
+    overflow-y: scroll;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.4);
 }
@@ -190,6 +177,12 @@ $mainColor: #89ddf4;
 
 .range-map img {
     width: -webkit-fill-available;
+}
+
+#map-text {
+    position: absolute;
+    text-align: center;
+    width: inherit;
 }
 
 #region-text {
