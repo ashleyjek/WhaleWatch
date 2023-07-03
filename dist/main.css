@@ -257,7 +257,7 @@ h1 span:nth-child(11) {
   }
 }
 body {
-  background-image: url("/assets/images/bg.jpeg");
+  background-image: url("../assets/images/bg.jpeg");
   background-size: cover;
   overflow: hidden;
 }
