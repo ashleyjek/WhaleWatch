@@ -5,6 +5,13 @@ $mainColor: #89ddf4; // Define a SCSS variable
    justify-content: center;
 }
 
+body {
+    background-image: url("../assets/images/bg.jpeg");   
+    background-size: cover;  
+    overflow: hidden;
+}
+
+
 .tutorial {
     position: absolute;
     top: 6%;
