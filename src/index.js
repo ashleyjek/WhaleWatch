@@ -5,37 +5,48 @@ import SPRITES from './data/sprites';
 
 
 document.addEventListener("DOMContentLoaded", () => {
-
+    
     const modal = document.querySelector(".modal");
     const tutButton = document.querySelector(".tutorial-button");
-    const exit = document.querySelector(".x")
+    const exit = document.querySelector(".close-tut")
     modal.style.display = "flex";
     tutButton.onclick = function() {
         modal.style.display = "flex";
-      }
+    }
     exit.onclick = function() {
         modal.style.display = "none";
+        if (typeof activeTab === "undefined") {
+            document.querySelector(".nav-bar li:first-child").click();
+        }
     }
+
+    const sourcesModal = document.querySelector(".sources-modal");
+    const sourceButton = document.querySelector(".source-button");
+    const close = document.querySelector(".close-sources")
+    sourceButton.onclick = function() {
+        sourcesModal.style.display = "flex";
+    }
+    close.onclick = function() {
+        sourcesModal.style.display = "none";
+    }
+
+
 
     let activeTab;
     const tab = document.querySelector(".nav-bar");
-    // const activeTabs = document.querySelectorAll("is_active");
-
+    
     tab.addEventListener("click", species => {
         const whaleSpecies = species.target.innerText;
         updateBasicFacts(whaleSpecies);
         updatePop(whaleSpecies);
         changeWhale(whaleSpecies); 
         activeTab = whaleSpecies;
-        // species.target.classList.add("is_active");
+        const activeTabs = document.querySelectorAll(".is_active");
+        activeTabs.forEach((tab) => {
+            tab.classList.remove("is_active")
+        })
+        species.target.classList.add("is_active");
     })
-    
-    // tab.addEventListener("click", activeTab => {
-    //     if (activeTabs.length) {
-    //         activeTabs.removeClass("is_active");
-    //     } 
-    // })
-
 
 
     
