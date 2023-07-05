@@ -1,6 +1,7 @@
 Whale Watch!
 
-Whale Watch is data visualization module showcasing facts about whales based on their species. The data will be presented through interactive visuals and features that will allow the user to navigate between different tabs. Each tab will hold one of the six featured species, which will allow the user to explore and access unique details. The project aims to provide informative and visually captivating insights into the diversity and significance of whales.
+Description: 
+Whale Watch is data visualization module showcasing facts about whales categorized by species. The data is presented through interactive visuals and features that will allow the user to navigate between different tabs. Each tab holds one of six species, that will allow the user access unique details. The project aims to provide informative and visually captivating insights into the diversity and significance of whales while spreading awareness on whale endangerment.
 
 Wireframe:
 ![Alt text](wireframe.png)

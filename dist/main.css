@@ -125,6 +125,7 @@
 
 .links {
   margin-right: 135px;
+  margin-left: 20px;
 }
 
 .links button {
@@ -324,47 +325,42 @@ h1 > span {
 }
 
 h1 span:nth-child(1) {
-  text-shadow: 0px 0px;
-  animation: none;
-}
-
-h1 span:nth-child(2) {
   animation-delay: 0s;
 }
 
-h1 span:nth-child(3) {
+h1 span:nth-child(2) {
   animation-delay: 0.2s;
 }
 
-h1 span:nth-child(4) {
+h1 span:nth-child(3) {
   animation-delay: 0.3s;
 }
 
-h1 span:nth-child(5) {
+h1 span:nth-child(4) {
   animation-delay: 0.4s;
 }
 
-h1 span:nth-child(6) {
+h1 span:nth-child(5) {
   animation-delay: 0.5s;
 }
 
-h1 span:nth-child(7) {
+h1 span:nth-child(6) {
   animation-delay: 0.6s;
 }
 
-h1 span:nth-child(8) {
+h1 span:nth-child(7) {
   animation-delay: 0.7s;
 }
 
-h1 span:nth-child(9) {
+h1 span:nth-child(8) {
   animation-delay: 0.8s;
 }
 
-h1 span:nth-child(10) {
+h1 span:nth-child(9) {
   animation-delay: 0.9s;
 }
 
-h1 span:nth-child(11) {
+h1 span:nth-child(10) {
   animation-delay: 1s;
 }
 
@@ -460,6 +456,14 @@ h1 span:nth-child(11) {
 @font-face {
   font-family: "Cream";
   src: url(../assets/fonts/Cream.ttf);
+}
+@font-face {
+  font-family: "Bingo";
+  src: url(../assets/fonts/BingoDilan-Regular.ttf);
+}
+@font-face {
+  font-family: "Magic";
+  src: url(../assets/fonts/Magic-Retro.ttf);
 }
 body {
   background-image: url("../assets/images/bg.jpeg");
