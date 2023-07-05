@@ -3,28 +3,31 @@ $mainColor: #89ddf4; // Define a SCSS variable
 .main-header {
    display: flex;
    justify-content: center;
+   align-items: flex-end;
 }
 
 
-.tutorial {
-    position: absolute;
-    top: 6%;
-    left: 28%;
+// .tutorial {
+//     position: absolute;
+//     top: 6%;
+//     left: 28%;
     
-}
+// }
 
 .tutorial-button {
     cursor: pointer;
+    margin-right: 20px;
 }
 
-.links {
-    position: absolute;
-    top: 6%;
-    right: 30%;
-}
+// .links {
+//     position: absolute;
+//     top: 6%;
+//     right: 30%;
+// }
 
 .links img {
     height: 40px;
+    margin-left: 20px;
 }
 
 .header {

@@ -5,9 +5,11 @@ import SPRITES from './data/sprites';
 
 
 document.addEventListener("DOMContentLoaded", () => {
+
     const modal = document.querySelector(".modal");
     const tutButton = document.querySelector(".tutorial-button");
     const exit = document.querySelector(".x")
+    modal.style.display = "flex";
     tutButton.onclick = function() {
         modal.style.display = "flex";
       }
@@ -17,13 +19,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let activeTab;
     const tab = document.querySelector(".nav-bar");
+    // const activeTabs = document.querySelectorAll("is_active");
+
     tab.addEventListener("click", species => {
         const whaleSpecies = species.target.innerText;
         updateBasicFacts(whaleSpecies);
         updatePop(whaleSpecies);
         changeWhale(whaleSpecies); 
         activeTab = whaleSpecies;
+        // species.target.classList.add("is_active");
     })
+    
+    // tab.addEventListener("click", activeTab => {
+    //     if (activeTabs.length) {
+    //         activeTabs.removeClass("is_active");
+    //     } 
+    // })
+
+
+
     
     const myAudio = new Audio("assets/audio/audio.mp3")
     const audioButton = document.querySelector("#audio-button");

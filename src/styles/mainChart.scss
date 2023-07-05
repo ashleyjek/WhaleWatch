@@ -11,13 +11,13 @@ $mainColor: #89ddf4;
 
 .navigation {
     display: flex;
-    width: 1200px;
+    width: 1050px;
     height: 50px;
 }
 
 .nav-bar {
     display: flex;
-    width: 1200px;
+    width: 1050px;
     justify-content: space-evenly;
     padding: 0px;
     margin: 0px;
@@ -25,7 +25,6 @@ $mainColor: #89ddf4;
 
 .buttons {
     display: flex;
-    // position: absolute;
     justify-content:center;
     cursor: pointer;
 }
@@ -39,14 +38,33 @@ $mainColor: #89ddf4;
     display: none; /* Hidden by default */
     position: absolute; /* Stay in place */
     z-index: 1;
-    padding: 100px; /* Location of the box */
-    margin-top: 210px;
-    width: 1100px;
-    height: 498px;
+    // padding: 200px; /* Location of the box */
+    margin-top: 160px;
+    padding-bottom: 70px;
+    width: 1350px;
+    height: 650px;
     border-radius: 35px;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgb(225,239,243);
     justify-content: center;
     align-items: center;
+  }
+
+  .modal img {
+    margin-top: -45px;
+    margin-left: 40px;
+    height: 1050px;
+    width: auto;
+  }
+
+  .modal button {
+    position: absolute;
+    left: 40px;
+    top: 15px;
+    border-color: white;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    padding: 5px;
+    font-family: Cream;
 
   }
 
@@ -89,6 +107,15 @@ $mainColor: #89ddf4;
     background-color: rgb(173, 216, 230, 0.4);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+
+}
+
+.is_active {
+    text-shadow:1px 1px white;
+    background-color: rgb(173, 216, 230, 0.4);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
 }
 
 .main-bg {
@@ -131,9 +158,6 @@ $mainColor: #89ddf4;
     box-shadow: black;
 }
 
-// #diver {
-//     width: 70px;
-// }
 
 .population-graph {
     width: 800;
