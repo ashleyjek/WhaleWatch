@@ -10,13 +10,13 @@ Wireframe:
 Functionality & MVPs:
 
 * Users can switch between 6 tabs that will dynamically render information on each of the highlighted species.
-![Alt text](./assets/images/facts-tab-1.png)
+![Alt text](./assets/images/code-nav.png)
 * View an illustration of each whale and access distinctive factual information for each species.
-![Alt text](./assets/images/facts-tab-2.png)
+![Alt text](./assets/images/code-facts.png)
 * Visualize the decrease in population for each species using a line graph.
-![Alt text](./assets/images/chart-code.png)
+![Alt text](./assets/images/code-chartjs.png)
 * Toggle between a map and text, providing the various regions where the species can be found.
-![Alt text](./assets/images/range-map-code.png)
+![Alt text](./assets/images/code-map.png)
 
 Technologies, Libraries, APIs:
 
