@@ -66,7 +66,3 @@ characteristics that will allow the user to differentiate between species.
 
 
 
-
-
-
-# WhaleWatch

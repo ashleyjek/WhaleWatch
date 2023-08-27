@@ -56,10 +56,10 @@ document.addEventListener("DOMContentLoaded", () => {
     audioButton.addEventListener("click", () => {
         toggle = !toggle;
         if (!toggle) {
-            audioButton.src = ("assets/images/audio-off.png")
+            audioButton.src = ("assets/images/audio-on.png")
             myAudio.play();
         } else {
-            audioButton.src = ("assets/images/audio-on.png")
+            audioButton.src = ("assets/images/audio-off.png")
             myAudio.pause();
         }
     });
