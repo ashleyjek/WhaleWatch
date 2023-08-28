@@ -6,31 +6,50 @@ import SPRITES from './data/sprites';
 
 document.addEventListener("DOMContentLoaded", () => {
     
+    const myAudio = new Audio("assets/audio/audio.mp3")
     const modal = document.querySelector(".modal");
     const tutButton = document.querySelector(".tutorial-button");
     const exit = document.querySelector(".close-tut")
+
     modal.style.display = "flex";
+    
+    document.querySelector("body").addEventListener("click", (e) => {
+        if (modal.style.display === "flex" && e.target !== tutButton) {
+            modal.style.display = "none";
+            myAudio.play();
+        }
+        if (typeof activeTab === "undefined") {
+            document.querySelector(".nav-bar li:first-child").click();
+        }
+    });
+
     tutButton.onclick = function() {
         modal.style.display = "flex";
-    }
+    };
+    
     exit.onclick = function() {
         modal.style.display = "none";
         if (typeof activeTab === "undefined") {
             document.querySelector(".nav-bar li:first-child").click();
         }
-    }
+    };
 
     const sourcesModal = document.querySelector(".sources-modal");
     const sourceButton = document.querySelector(".source-button");
     const close = document.querySelector(".close-sources")
     sourceButton.onclick = function() {
         sourcesModal.style.display = "flex";
-    }
+    };
+
     close.onclick = function() {
-        sourcesModal.style.display = "none";
+        sourcesModal.style.display = "flex";
     }
 
-
+    document.querySelector("body").addEventListener("click", (e) => {
+        if (sourcesModal.style.display === "flex" && e.target !== sourceButton) {
+            sourcesModal.style.display = "none";
+        }
+    });
 
     let activeTab;
     const tab = document.querySelector(".nav-bar");
@@ -48,19 +67,16 @@ document.addEventListener("DOMContentLoaded", () => {
         species.target.classList.add("is_active");
     })
 
-
-    
-    const myAudio = new Audio("assets/audio/audio.mp3")
     const audioButton = document.querySelector("#audio-button");
     let toggle = true;
     audioButton.addEventListener("click", () => {
         toggle = !toggle;
         if (!toggle) {
-            audioButton.src = ("assets/images/audio-on.png")
-            myAudio.play();
-        } else {
             audioButton.src = ("assets/images/audio-off.png")
             myAudio.pause();
+        } else {
+            audioButton.src = ("assets/images/audio-on.png")
+            myAudio.play();
         }
     });
 
@@ -156,25 +172,9 @@ function updatePop(whaleSpecies) {
     }
 }
 
-
-
-let nIntervId;
-let i = 0;
-
 function changeWhale(whaleSpecies) {
-    // nIntervId = null
-    // if (!nIntervId) {
-    //     nIntervId = setInterval(() => {
-            const images = SPRITES[whaleSpecies]["imgSrc"] 
-            document.querySelector("#size-comp").src = images[0];
-//             i++;
-
-//             if (images.length === i) {
-//                 clearInterval(nIntervId);
-//                 i = 0;
-//             }
-//         }, 500);
-// }
+    const images = SPRITES[whaleSpecies]["imgSrc"] 
+    document.querySelector("#size-comp").src = images[0];
 }
 
 
