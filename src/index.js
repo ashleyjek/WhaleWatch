@@ -5,8 +5,21 @@ import SPRITES from './data/sprites';
 
 
 document.addEventListener("DOMContentLoaded", () => {
-    
-    const myAudio = new Audio("assets/audio/audio.mp3")
+
+    const myAudio = new Audio("assets/audio/audio.mp3");
+    const audioButton = document.querySelector("#audio-button");
+    let toggle = true;
+    audioButton.addEventListener("click", () => {
+        toggle = !toggle;
+        if (!toggle) {
+            audioButton.src = ("assets/images/audio-off.png")
+            myAudio.pause();
+        } else {
+            audioButton.src = ("assets/images/audio-on.png")
+            myAudio.play();
+        }
+    });
+
     const modal = document.querySelector(".modal");
     const tutButton = document.querySelector(".tutorial-button");
     const exit = document.querySelector(".close-tut")
@@ -16,6 +29,8 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector("body").addEventListener("click", (e) => {
         if (modal.style.display === "flex" && e.target !== tutButton) {
             modal.style.display = "none";
+        }
+        if (toggle) {
             myAudio.play();
         }
         if (typeof activeTab === "undefined") {
@@ -66,19 +81,6 @@ document.addEventListener("DOMContentLoaded", () => {
         })
         species.target.classList.add("is_active");
     })
-
-    const audioButton = document.querySelector("#audio-button");
-    let toggle = true;
-    audioButton.addEventListener("click", () => {
-        toggle = !toggle;
-        if (!toggle) {
-            audioButton.src = ("assets/images/audio-off.png")
-            myAudio.pause();
-        } else {
-            audioButton.src = ("assets/images/audio-on.png")
-            myAudio.play();
-        }
-    });
 
     const rangeMapContainer = document.querySelector('.range-map');
     const rangeMap = document.querySelector('#map-png');
