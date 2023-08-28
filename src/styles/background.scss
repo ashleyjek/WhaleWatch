@@ -6,12 +6,6 @@ $mainColor: #89ddf4; // Define a SCSS variable
    align-items: flex-end;
 }
 
-
-.links img {
-    height: 40px;
-    margin-left: 20px;
-}
-
 .header {
     display: flex;
     justify-content: center;
@@ -19,10 +13,10 @@ $mainColor: #89ddf4; // Define a SCSS variable
 }
 
 h1 {
-    margin-top: 25px;
+    margin-top: 4vh;
     margin-bottom: 0;
     font-family: OhWhale;
-    font-size: 80px;
+    font-size: 8vh;
     color: rgb(87, 196, 221);
     text-shadow:3px 3px rgb(40, 126, 151);
 }
@@ -33,7 +27,7 @@ h1 > span {
     animation-timing-function: linear;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
-    margin: -9;
+    margin: -0.5vw;
 
 }
 
@@ -73,7 +67,7 @@ h1 span:nth-child(10) {
       transform: translateY(0em);
     }
     60% {
-      transform: translateY(-0.4em);
+      transform: translateY(-0.2vh);
     }
     100% {
       transform: translateY(0em);
@@ -86,7 +80,7 @@ h1 span:nth-child(10) {
     width: 100%;
     justify-content: space-around;
     position: absolute;
-    bottom: -90;
+    bottom: -30vh;
 }
 
 .bubbles > img {
@@ -94,7 +88,7 @@ h1 span:nth-child(10) {
     animation-timing-function: linear;
     animation-duration: 5s;
     animation-iteration-count: infinite;
-    width: 90px;
+    width: 9vh;
 }
 
 @keyframes bubble {
