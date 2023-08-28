@@ -349,7 +349,7 @@ h1 span:nth-child(10) {
     transform: translateY(0em);
   }
   60% {
-    transform: translateY(-0.2vh);
+    transform: translateY(-1.5vh);
   }
   100% {
     transform: translateY(0em);
